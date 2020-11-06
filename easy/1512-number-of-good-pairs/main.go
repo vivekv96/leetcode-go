@@ -1,8 +1,6 @@
 // Problem: https://leetcode.com/problems/number-of-good-pairs/
 package main
 
-import "fmt"
-
 func numIdenticalPairs(nums []int) int {
 	numOfPairs := 0
 
@@ -15,9 +13,4 @@ func numIdenticalPairs(nums []int) int {
 	}
 
 	return numOfPairs
-}
-
-func main() {
-	output := numIdenticalPairs([]int{1, 2, 3, 1, 1, 3})
-	fmt.Println(output)
 }

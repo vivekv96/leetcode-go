@@ -1,8 +1,6 @@
 // Problem: https://leetcode.com/problems/kids-with-the-greatest-number-of-candies/
 package main
 
-import "fmt"
-
 func kidsWithCandies(candies []int, extraCandies int) []bool {
 	output := make([]bool, len(candies))
 	max := candies[0]
@@ -22,9 +20,4 @@ func kidsWithCandies(candies []int, extraCandies int) []bool {
 	}
 
 	return output
-}
-
-func main() {
-	output := kidsWithCandies([]int{2, 3, 5, 1, 3}, 3)
-	fmt.Println(output)
 }

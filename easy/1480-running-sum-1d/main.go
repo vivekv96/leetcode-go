@@ -1,8 +1,6 @@
 // Problem: https://leetcode.com/problems/running-sum-of-1d-array/
 package main
 
-import "fmt"
-
 func runningSum(nums []int) []int {
 	runningSum := make([]int, len(nums))
 
@@ -13,9 +11,4 @@ func runningSum(nums []int) []int {
 	}
 
 	return runningSum
-}
-
-func main() {
-	output := runningSum([]int{1, 2, 3, 4})
-	fmt.Println(output)
 }

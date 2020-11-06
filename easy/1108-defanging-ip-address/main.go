@@ -2,7 +2,6 @@
 package main
 
 import (
-	"fmt"
 	"strings"
 )
 
@@ -23,9 +22,4 @@ func defangIPaddr(address string) string {
 
 	return string(defanged)
 	*/
-}
-
-func main() {
-	output := defangIPaddr("1.1.1.1")
-	fmt.Println(output)
 }
