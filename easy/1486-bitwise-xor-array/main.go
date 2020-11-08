@@ -2,7 +2,7 @@
 package main
 
 func xorOperation(n int, start int) int {
-	nums := make([]int, n, n)
+	nums := make([]int, n)
 	output := 0
 
 	for i := 0; i < n; i++ {

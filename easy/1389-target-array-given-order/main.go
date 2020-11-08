@@ -2,7 +2,7 @@
 package main
 
 func createTargetArray(nums []int, index []int) []int {
-	target := make([]*int, len(nums), len(nums))
+	target := make([]*int, len(nums))
 
 	for i, num := range nums {
 		if target[index[i]] != nil {

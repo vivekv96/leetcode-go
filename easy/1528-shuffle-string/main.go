@@ -2,7 +2,7 @@
 package main
 
 func restoreString(s string, indices []int) string {
-	output := make([]byte, len(s), len(s))
+	output := make([]byte, len(s))
 
 	for i := 0; i < len(indices); i++ {
 		output[indices[i]] = s[i]

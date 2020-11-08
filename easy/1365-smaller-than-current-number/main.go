@@ -2,12 +2,12 @@
 package main
 
 func smallerNumbersThanCurrent(nums []int) []int {
-	output := make([]int, len(nums), len(nums))
+	output := make([]int, len(nums))
 
-	for i, _ := range nums {
+	for i := range nums {
 		count := 0
 
-		for j, _ := range nums {
+		for j := range nums {
 			if nums[j] < nums[i] {
 				count++
 			}

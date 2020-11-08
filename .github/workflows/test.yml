@@ -29,3 +29,9 @@ jobs:
 
     - name: Test
       run: go test -v ./...
+
+    - name: Run golangci-lint
+      # You may pin to the exact commit or the version.
+      uses: golangci/golangci-lint-action@v1.2.1
+      with:
+        version: v1.29
