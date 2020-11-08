@@ -43,3 +43,4 @@ jobs:
       with:
         coverageLocations: cover.out:gocov
         debug: true
+        prefix: github.com/vivekv96/leetcode-go
