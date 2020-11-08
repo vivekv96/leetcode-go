@@ -28,10 +28,18 @@ jobs:
         fi
 
     - name: Test
-      run: go test -v ./...
+      run: go test ./... -v -coverprofile=cover.out
 
     - name: Run golangci-lint
       # You may pin to the exact commit or the version.
       uses: golangci/golangci-lint-action@v1.2.1
       with:
         version: v1.29
+
+    - name: Send test coverage to CodeClimate
+      uses: paambaati/codeclimate-action@v2.7.4
+      env:
+        CC_TEST_REPORTER_ID: ${{secrets.CC_TEST_REPORTER_ID}}
+      with:
+        coverageLocations: cover.out:gocov
+        debug: true
