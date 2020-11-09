@@ -53,6 +53,14 @@ func Test_canFormArray(t *testing.T) {
 			},
 			want: false,
 		},
+		{
+			name: "sixth case",
+			args: args{
+				arr:    []int{91, 4, 64, 1, 78},
+				pieces: [][]int{{78}, {4, 64, 3}, {91}},
+			},
+			want: false,
+		},
 	}
 
 	for _, tt := range tests {
